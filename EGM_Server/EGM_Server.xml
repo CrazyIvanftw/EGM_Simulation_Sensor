@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lc:LibraryCompiler xmlns:lc="urn:abb-robotics-robotstudio-librarycompiler"
+										xmlns="urn:abb-robotics-robotstudio-graphiccomponent"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:abb-robotics-robotstudio-librarycompiler file:///C:\Program%20Files%20(x86)\ABB%20Industrial%20IT\Robotics%20IT\SDK\RobotStudio%20SDK%206.07\LibraryCompilerSchema.xsd
+                                        urn:abb-robotics-robotstudio-graphiccomponent file:///C:\Program%20Files%20(x86)\ABB%20Industrial%20IT\Robotics%20IT\SDK\RobotStudio%20SDK%206.07\GraphicComponentSchema.xsd">
+	<lc:Library fileName="EGM_Server.rslib">
+		<lc:DocumentProperties>
+			<lc:Author>sas10gau</lc:Author>
+			<lc:Image source="EGM_Server.png"/>
+		</lc:DocumentProperties>
+		<SmartComponent name="EGM_Server" icon="EGM_Server.png"
+										codeBehind="EGM_Server.CodeBehind,EGM_Server.dll"
+										canBeSimulated="true">
+			<Properties>
+				<DynamicProperty name="SampleProperty" valueType="System.Double" value="10">
+					<Attribute key="MinValue" value="0"/>
+					<Attribute key="Quantity" value="Length"/>
+				</DynamicProperty>
+			</Properties>
+			<Bindings>
+			</Bindings>
+			<Signals>
+				<IOSignal name="ServerStart" signalType="DigitalInput"/>
+        <IOSignal name="TrapFinished" signalType="DigitalInput"/>
+        <IOSignal name="Inactive" signalType="DigitalOutput"/>
+        <IOSignal name="Stream" signalType="DigitalOutput"/>
+        <IOSignal name="Guideance" signalType="DigitalOutput"/>
+        <IOSignal name="Correction" signalType="DigitalOutput"/>
+			</Signals>
+			<GraphicComponents>
+			</GraphicComponents>
+			<Assets>
+				<Asset source="EGM_Server.dll"/>
+			</Assets>
+		</SmartComponent>
+	</lc:Library>
+</lc:LibraryCompiler>

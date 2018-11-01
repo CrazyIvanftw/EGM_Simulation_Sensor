@@ -1,0 +1,16 @@
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\obj\Debug\EGM_Server.csproj.CoreCompileInputs.cache
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\bin\Debug\EGM_Server.dll
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\bin\Debug\EGM_Server.pdb
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\bin\Debug\Google.ProtocolBuffers.dll
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\bin\Debug\Google.ProtocolBuffers.Serialization.dll
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\bin\Debug\Google.ProtocolBuffers.xml
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\bin\Debug\Google.ProtocolBuffers.Serialization.xml
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\obj\Debug\EGM_Server.csproj.CopyComplete
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\obj\Debug\EGM_Server.dll
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\obj\Debug\EGM_Server.pdb
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\obj\Debug\EGM_Server.InactiveForm.resources
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\obj\Debug\EGM_Server.PathCorrectionForm.resources
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\obj\Debug\EGM_Server.PositionGuidenceForm.resources
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\obj\Debug\EGM_Server.PositionStreamForm.resources
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\obj\Debug\EGM_Server.csproj.GenerateResource.cache
+C:\Users\sas10gau\source\repos\EGMController\EGM_Server\obj\Debug\EGM_Server.csprojAssemblyReference.cache

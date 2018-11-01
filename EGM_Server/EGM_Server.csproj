@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12C684DA-21CC-43CF-951F-251687151DC3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EGM_Server</RootNamespace>
+    <AssemblyName>EGM_Server</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramFiles)\ABB Industrial IT\Robotics IT\RobotStudio 6.07\Bin\RobotStudio.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(ProgramFiles)\ABB Industrial IT\Robotics IT\RobotStudio 6.07\Bin\RobotStudio.exe</StartProgram>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ABB.Robotics.Math">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ProgramFiles)\ABB Industrial IT\Robotics IT\SDK\RobotStudio SDK 6.07\ABB.Robotics.Math.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ABB.Robotics.RobotStudio">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ProgramFiles)\ABB Industrial IT\Robotics IT\SDK\RobotStudio SDK 6.07\ABB.Robotics.RobotStudio.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ABB.Robotics.RobotStudio.Stations">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(ProgramFiles)\ABB Industrial IT\Robotics IT\SDK\RobotStudio SDK 6.07\ABB.Robotics.RobotStudio.Stations.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers, Version=2.4.1.555, Culture=neutral, PublicKeyToken=55f7125234beb589, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.ProtocolBuffers.2.4.1.555\lib\net40\Google.ProtocolBuffers.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffers.Serialization, Version=2.4.1.555, Culture=neutral, PublicKeyToken=55f7125234beb589, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.ProtocolBuffers.2.4.1.555\lib\net40\Google.ProtocolBuffers.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeBehind.cs" />
+    <Compile Include="Egm.cs" />
+    <Compile Include="InactiveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InactiveForm.Designer.cs">
+      <DependentUpon>InactiveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PathCorrectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PathCorrectionForm.Designer.cs">
+      <DependentUpon>PathCorrectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PositionGuidenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PositionGuidenceForm.Designer.cs">
+      <DependentUpon>PositionGuidenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PositionStreamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PositionStreamForm.Designer.cs">
+      <DependentUpon>PositionStreamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EGM_Server.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EGM_Server.en.xml" />
+    <None Include="EGM_Server.png" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InactiveForm.resx">
+      <DependentUpon>InactiveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PathCorrectionForm.resx">
+      <DependentUpon>PathCorrectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PositionGuidenceForm.resx">
+      <DependentUpon>PositionGuidenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PositionStreamForm.resx">
+      <DependentUpon>PositionStreamForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>copy /y "$(TargetPath)" "$(ProjectDir)"
+"$(ProgramFiles)\ABB Industrial IT\Robotics IT\RobotStudio 6.07\bin\LibraryCompiler.exe" "$(ProjectDir)\EGM_Server.xml"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
